@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    /* padding: 50px 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: #fff;
+}
+
+.sidebar h1 {
+    padding: 30px 20px;
+}
+
+.sidebar p {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: blue;
+    border-left: 2px solid #fff;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.products {
+    width: 70%;
+    margin-left: 350px;
+}
+
+.products__category {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    scrollbar-width: none;
+    overflow: auto;
+}
+
+.products__category data {
+    width: 150px;
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.products__table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    margin: 50px;
+  }
+  
+  .products__table tr {
+    border-bottom: 1px solid #aaa;
+  }
+  
+  .products__table tr:nth-child(even) {
+    background: #f1f1f1;
+  }
+  
+  .products__table th,
+  .products__table td {
+    padding: 14px 20px;
+    text-align: left;
+  }
+  
+  .products__table th {
+    background: #222;
+    color: #fff;
+  }
+  
+  .products__table th:first-child {
+    border-radius: 14px 0 0 0;
+  }
+  
+  .products__table th:last-child {
+    border-radius: 0 14px 0 0;
+  }
+  
+  .table__wrapper {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .products__table select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  
+  .products__table option {
+    background: #222;
+  }
